@@ -25,7 +25,10 @@ android {
 chaquopy {
     defaultConfig {
         version = "3.11"
-        pip { install("pyatv") }
+        pip {
+            install("cryptography==42.0.8")
+            install("pyatv==0.14.5")
+        }
     }
 }
 
